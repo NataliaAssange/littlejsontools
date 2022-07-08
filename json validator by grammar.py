@@ -1,7 +1,7 @@
 import json
 import re
 try:
-    with open(r'C:\Users\CN0CHHG\Downloads\case_data_index.json',encoding="utf-8") as f:
+    with open(r'yourpath\yourfile.json',encoding="utf-8") as f:
         a=f.read()
         json.JSONDecoder().decode(a)
 except Exception as e:
@@ -13,7 +13,7 @@ except Exception as e:
     char2=int(l[1])+4
     print(type(char1))
     #find line
-    with open(r'C:\Users\CN0CHHG\Downloads\case_data_index.json',encoding="utf-8") as f:
+    with open(r'yourpath\yourfile.json',encoding="utf-8") as f:
         i = f.readline()
         count = 1
         while i:
