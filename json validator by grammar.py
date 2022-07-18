@@ -11,7 +11,6 @@ except Exception as e:
     line=int(l[0])
     char1=int(l[1])-6
     char2=int(l[1])+4
-    print(type(char1))
     #find line
     with open(r'yourpath\yourfile.json',encoding="utf-8") as f:
         i = f.readline()
