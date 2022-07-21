@@ -1,5 +1,5 @@
 import json
-with open(r'C:\Users\CN0CHHG\Downloads\person_info.json',encoding="utf-8") as f:
+with open(r'yourpath\yourfile.json',encoding="utf-8") as f:
     data=json.load(f)
     n=0
     for i in data:
