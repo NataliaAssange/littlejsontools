@@ -41,7 +41,7 @@ class JsonToScheam:
  
 if __name__ == '__main__':
 # note:this sample file should contain ONLY ONE line! Please select carefully the longest one you want, and make sure it is correct in grammar
-    with open(r'C:\Users\CN0CHHG\Documents\New\case_clean.json', encoding="utf-8") as f:
+    with open(r'yourpath/yourfile.json', encoding="utf-8") as f:
         schema = JsonToScheam().get_schema(json.load(f))
     print(schema)
 
