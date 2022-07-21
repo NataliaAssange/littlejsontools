@@ -1,5 +1,5 @@
 import json
-with open(r'C:\Users\CN0CHHG\Downloads\case_test.json',encoding="utf-8") as f:
+with open(r'yourpath\yourfile.json',encoding="utf-8") as f:
     data=json.load(f)
     for i in data:
         a=i.get('_source').get('LATITUDE')
@@ -19,8 +19,8 @@ with open(r'C:\Users\CN0CHHG\Downloads\case_test.json',encoding="utf-8") as f:
             else:
                 i['check_address']=c
             #把check——address丢进api里得到经纬度
-            lat=120
-            lon=30 #占位
+            lat=123
+            lon=123 #占位
             list_data = i['_source']
             dict_value = list_data['LATITUDE']=lat
             dict_value = list_data['LONGITUDE']=lon
